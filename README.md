@@ -15,10 +15,10 @@ Add scripts at the end of the `<body>` tags
 
 Create a button to open the drawer. This button can be styled as wanted.
 ```html
-<button id="bl-button"></button>
+<button id="bl-button">Open Link</button>
 ```
 
 If you want multiple buttons that open the drawer on the same page, use the following template for each button:
 ```html
-<button id="bl-button" class="bl-button" data-multiple="true"></button
+<button id="bl-button" class="bl-button" data-multiple="true">Open Link</button>
 ```
