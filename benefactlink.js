@@ -10,7 +10,7 @@ let infoHTML = `
     <div class="bl-hero-section">
       <div class="bl-hero-content bl-link-container">
         <div class="bl-hero-text">
-          <h1 class="bl-hero-title">If you fundraise for us, we'll <font style="color:#34d399">pay you</font> 5% of the amount you raise!</h1>
+          <h1 class="bl-hero-title">If you fundraise for us, we'll <font class="bl-title-font">pay you</font> 5% of the amount you raise!</h1>
           <h2 class="bl-hero-subtitle">Anyone can fundraise, no accounts required, and it takes just 5 minutes to get started.</h2>
         </div>
         <div class="bl-hero-image-container">
@@ -49,7 +49,7 @@ let infoHTML = `
         </button>
         <div class="bl-content">
           <div class="bl-collapsible-text">
-            <ul style="padding-inline-start:1rem;">
+            <ul style="list-style-type:circle; padding-inline-start:1rem;">
               <li class="bl-bullet">Tell your friends and family to donate</li>
               <li class="bl-bullet">Dedicate your birthday to raise money</li>
               <li class="bl-bullet">Hold a concert and collect donations</li>
@@ -65,7 +65,7 @@ let infoHTML = `
         </button>
         <div class="bl-content">
           <div class="bl-collapsible-text">
-            <ul style="padding-inline-start:1rem;">
+            <ul style="list-style-type:circle; padding-inline-start:1rem;">
               <li class="bl-bullet">You must have a valid US bank account (in order to accept your payment)</li>
               <li class="bl-bullet">
                 If you are an existing fundraiser for Sharing Excess or running an existing fundraiser (e.g., a college fundraiser at one of our college branches), then you are ineligible to fundraise here at this time. 

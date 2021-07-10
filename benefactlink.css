@@ -154,6 +154,11 @@
   color: #34d399;
 }
 
+.bl-title-font {
+  color: #34d399;
+  font-family: "Questrial", sans-serif;
+}
+
 .bl-hero-section {
   display: flex;
   justify-content: center;
@@ -207,6 +212,7 @@
   color: black;
   font-size: 2.25rem;
   line-height: 2.5rem;
+  text-align: left;
 }
 
 .bl-how-card {
@@ -231,6 +237,7 @@
   padding-left: 0.5rem;
   border-left: 4px solid black;
   margin-top: 1rem;
+  text-align: left;
 }
 
 .bl-how-subtext {
@@ -239,6 +246,7 @@
   font-family: "Inter", sans-serif;
   margin-top: 0.5rem;
   line-height: 1.5rem;
+  text-align: left;
 }
 
 /* question section */
@@ -250,6 +258,9 @@
 }
 
 .bl-question-title {
+  margin: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   font-family: "Questrial", sans-serif;
   font-weight: 700;
   color: black;
@@ -285,6 +296,7 @@
 }
 
 .bl-content {
+  text-align: left;
   padding: 0 18px;
   background-color: white;
   max-height: 0;
@@ -301,6 +313,7 @@
   margin: 0;
   font-size: 1.1rem;
   text-align: left;
+  font-family: "Questrial", sans-serif;
 }
 
 .bl-collapsible-icon {
