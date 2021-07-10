@@ -1,14 +1,14 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Questrial&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Questrial&display=swap");
 
 /* The Modal (background) */
-.launch-form {
+.bl-launch-form {
   height: 100%;
   border-width: 0;
   box-sizing: border-box;
 }
 
-.modal {
+.bl-modal {
   z-index: 2000000001;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -28,13 +28,13 @@
   box-sizing: border-box;
 }
 
-.modal-closed {    /* close state is hidden and off screen */
+.bl-modal-closed {    /* close state is hidden and off screen */
   bottom: -300px;
   height: 0;
 }
 
 /* The Close Button */
-.close {
+.bl-close {
   color: #aaa;
   font-size: 3rem;
   transition: color 0.2s ease-in-out;
@@ -42,13 +42,13 @@
   margin-right: 15px;
 }
 
-.close:hover {
+.bl-close:hover {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
 
-.close:focus {
+.bl-close:focus {
   outline: 0;
   box-shadow: none;
 }
@@ -60,20 +60,20 @@
   overflow-y: scroll;
 }
 
-.banner {
+.bl-banner {
   display: flex;
   flex-direction: column;
   padding: 1rem;
   background-color: #f9fafb;
 }
 
-.buttons {
+.bl-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.link-button {
+.bl-link-button {
   width: 50%;
   max-width: 300px;
   display: flex;
@@ -99,51 +99,51 @@
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.link-button:hover {
+.bl-link-button:hover {
   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.info-button {
+.bl-info-button {
   margin-right: 10px;
 }
 
-.link-button.current {
+.bl-link-button.bl-current {
   border-color: #34d399;
   border-width: 2px;
   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.button-text {
+.bl-button-text {
   text-align: left;
   margin-left: 5px;
 }
 
-.button-title {
+.bl-button-title {
   color: #303030;
   margin-bottom: 3px;
   font-family: "Questrial", sans-serif;
   font-weight: bold;
 }
 
-.button-subtext {
+.bl-button-subtext {
   font-size: 0.875rem;
   font-family: "Inter", sans-serif;
   display: none;
 }
 
-.link-icon {
+.bl-link-icon {
   color: #303030;
   margin-right: 2px;
   transition: color 250ms ease-in-out;
 }
 
-.current > .link-icon {
+.bl-current > .bl-link-icon {
   color: #34d399;
 }
 
-.link-image {
+.bl-link-image {
   max-width: 100%;
   max-height: 50vh;
   margin-top: 2rem;
@@ -154,24 +154,24 @@
   color: #34d399;
 }
 
-.hero-section {
+.bl-hero-section {
   display: flex;
   justify-content: center;
   padding: 3rem 1rem;
 }
 
-.hero-content {
+.bl-hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.hero-text {
+.bl-hero-text {
   display: flex;
   flex-direction: column;
 }
 
-.hero-title {
+.bl-hero-title {
   font-family: "Questrial", sans-serif;
   font-weight: 700;
   color: black;
@@ -182,7 +182,7 @@
   text-align: center;
 }
 
-.hero-subtitle {
+.bl-hero-subtitle {
   font-family: "Inter", sans-serif;
   line-height: 1.625rem;
   color: #1f2937;
@@ -192,14 +192,14 @@
 }
 
 /* how it works section */
-.how-section {
+.bl-how-section {
   background-color: #edfdf5;
   padding: 1rem 0.5rem;
   display: flex;
   justify-content: center;
 }
 
-.how-title {
+.bl-how-title {
   margin: 0;
   margin-top: 2rem;
   font-family: "Questrial", sans-serif;
@@ -209,19 +209,19 @@
   line-height: 2.5rem;
 }
 
-.how-card {
+.bl-how-card {
   display: flex;
   flex-direction: column;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
-.how-image {
+.bl-how-image {
   width: 7rem;
   height: 7rem;
 }
 
-.how-heading {
+.bl-how-heading {
   margin: 0;
   font-family: "Questrial", sans-serif;
   font-weight: 700;
@@ -233,7 +233,7 @@
   margin-top: 1rem;
 }
 
-.how-subtext {
+.bl-how-subtext {
   margin: 0;
   color: #4b5563;
   font-family: "Inter", sans-serif;
@@ -242,14 +242,14 @@
 }
 
 /* question section */
-.question-section {
+.bl-question-section {
   background-color: #f9fafb;
   padding: 1rem 1rem 5rem 1rem;
   display: flex;
   justify-content: center;
 }
 
-.question-title {
+.bl-question-title {
   font-family: "Questrial", sans-serif;
   font-weight: 700;
   color: black;
@@ -258,11 +258,11 @@
   text-align: center;
 }
 
-.question-content {
+.bl-question-content {
   max-width: 720px;
 }
 
-.collapsible {
+.bl-collapsible {
   background-color: white;
   color: #444;
   cursor: pointer;
@@ -279,12 +279,12 @@
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.collapsible.active {
+.bl-collapsible.bl-active {
   border-radius: 5px 5px 0 0;
   border-bottom: none;
 }
 
-.content {
+.bl-content {
   padding: 0 18px;
   background-color: white;
   max-height: 0;
@@ -297,19 +297,19 @@
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.collapsible-title {
+.bl-collapsible-title {
   margin: 0;
   font-size: 1.1rem;
   text-align: left;
 }
 
-.collapsible-icon {
+.bl-collapsible-icon {
   margin-left: auto;
   margin-right: 5px;
   padding-left: 5px;
 }
 
-.collapsible-text {
+.bl-collapsible-text {
   margin: 0;
   color: #4b5563;
   font-family: "Inter", sans-serif;
@@ -319,61 +319,61 @@
   padding-bottom: 1rem;
 }
 
-.spacer {
+.bl-spacer {
   height: 1rem;
 }
 
-.bullet {
+.bl-bullet {
   margin-bottom: 0.5rem;
   line-height: 1.3rem;
 }
 
 
 @media (min-width: 640px) {
-  .link-container {
+  .bl-link-container {
     max-width: 640px;
   }
 }
 
 @media (min-width: 768px) {
-  .link-container {
+  .bl-link-container {
     max-width: 768px;
   }
 }
 
 @media (min-width: 1024px) {
-  .link-container {
+  .bl-link-container {
     max-width: 1024px;
   }
   
-  .hero-content {
+  .bl-hero-content {
     flex-direction: row;
   }
   
-  .hero-title {
+  .bl-hero-title {
     text-align: left;
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
   
-  .hero-subtitle {
+  .bl-hero-subtitle {
     text-align: left;
   }
   
-  .hero-text {
+  .bl-hero-text {
     width: 50%;
     margin-right: 2rem;
   }
   
-  .hero-image-container {
+  .bl-hero-image-container {
     width: 50%;
   }
   
-  .how-container {
+  .bl-how-container {
     display: flex;
   }
   
-  .how-card {
+  .bl-how-card {
     width: 33.33%
   }
   
@@ -383,13 +383,13 @@
 }
 
 @media (min-width: 1280px) {
-  .link-container {
+  .bl-link-container {
     max-width: 1280px;
   }
 }
 
 @media (min-width: 1536px) {
-  .link-container {
+  .bl-link-container {
     max-width: 1536px;
   }
 }
