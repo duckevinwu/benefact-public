@@ -49,7 +49,7 @@ let infoHTML = `
         </button>
         <div class="bl-content">
           <div class="bl-collapsible-text">
-            <ul style="list-style-type:circle; padding-inline-start:1rem;">
+            <ul style="list-style-type:disc; padding-inline-start:1rem;">
               <li class="bl-bullet">Tell your friends and family to donate</li>
               <li class="bl-bullet">Dedicate your birthday to raise money</li>
               <li class="bl-bullet">Hold a concert and collect donations</li>
@@ -65,7 +65,7 @@ let infoHTML = `
         </button>
         <div class="bl-content">
           <div class="bl-collapsible-text">
-            <ul style="list-style-type:circle; padding-inline-start:1rem;">
+            <ul style="list-style-type:disc; padding-inline-start:1rem;">
               <li class="bl-bullet">You must have a valid US bank account (in order to accept your payment)</li>
               <li class="bl-bullet">
                 If you are an existing fundraiser for Sharing Excess or running an existing fundraiser (e.g., a college fundraiser at one of our college branches), then you are ineligible to fundraise here at this time. 
@@ -98,7 +98,7 @@ let formHTML = `
 `; 
 
 window.onload = function() {
-  let soButton = document.getElementById("bl-button");
+  let blButton = document.getElementById("bl-button");
   let modal = `
     <div class="bl-modal bl-modal-closed" id="bl-modal">
       <div class="bl-banner">
@@ -115,8 +115,17 @@ window.onload = function() {
       <div id="link-content"></div>
      </div>
   `;
-  soButton.insertAdjacentHTML('afterend', modal);
-  soButton.addEventListener('click', openModal);
+  blButton.insertAdjacentHTML('afterend', modal);
+  blButton.addEventListener('click', openModal);
+  
+  let isDemo = blButton.getAttribute('data-multiple');
+  if (isDemo === 'true') {
+    let buttonArr = document.getElementsByClassName('bl-button');
+    for (let i = 0; i < buttonArr.length; i++) {
+      buttonArr[i].addEventListener("click", openModal);
+    }
+  }
+  
   infoButton = document.getElementById("info-button");
   formButton = document.getElementById("form-button");
   infoSection = document.getElementById("info-section");
